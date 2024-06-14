@@ -1,5 +1,7 @@
+let Temperatura = 0
 input.onButtonPressed(Button.A, function () {
-    basic.showNumber(input.temperature())
+    Temperatura = input.temperature()
+    basic.showString("" + Temperatura + "ºc")
 })
 input.onButtonPressed(Button.AB, function () {
     basic.showNumber(input.lightLevel())
